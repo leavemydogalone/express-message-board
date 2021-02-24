@@ -1,0 +1,18 @@
+extends layout
+
+block content
+  h1 New Message Form
+  form(action="/new" method="Post")
+    p Author:
+        input(
+        placeholder='author'
+        type='text'
+        name='author'
+        )
+    p Book:
+        input(
+        placeholder="text"
+        type='text'
+        name='text'
+        )
+    input(type='submit')

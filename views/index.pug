@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  form(method='Post' action='/')
+    button(type='submit') New Message
+  ul
+    each message in messages
+      li
+        p= message.user 
+        p= message.text
+        p= message.added
+  
