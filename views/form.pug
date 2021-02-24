@@ -3,13 +3,13 @@ extends layout
 block content
   h1 New Message Form
   form(action="/new" method="Post")
-    p Author:
+    p user:
         input(
-        placeholder='author'
+        placeholder='user'
         type='text'
         name='author'
         )
-    p Book:
+    p message:
         input(
         placeholder="text"
         type='text'
